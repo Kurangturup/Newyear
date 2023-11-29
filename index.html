@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Countdown</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+    
+      body{
+        margin-top: 200px;
+        margin-bottom: 250px;
+        text-align: center;
+        font-family: sans-serif;
+        background: url('https://sanga.id/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-27-at-16.56.32.jpeg') center no-repeat;
+        background-size: cover;
+      }
+      div {
+        display: inline-block;
+        padding: 5px;
+        max-width: 80px;
+        max-height: 100px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 2px lightblue, 0 0 25px blue, 0 0 5px lightblue;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+      #days, #hours, #minutes, #seconds {
+        font-size: 40px;
+        border-bottom: 1px solid #ccc;
+      }
+      h1 {
+        color: #fff;
+      }
+  </style>
+  <body>
+    <h1>Tahun Baru Akan dimulai dalam waktu</h1>
+    <div><span id="days">00</span><br>Hari</div>
+    <div><span id="hours">00</span><br>Jam</div>
+    <div><span id="minutes">00</span><br>Menit</div>
+    <div><span id="seconds">00</span><br>Detik</div>
+
+    <script src="countdown.js"></script>
+    <script>
+      countdown('12/31/2023 11:59:59 PM', ['days', 'hours', 'minutes', 'seconds'], function() {
+        document.write('<h1>Selamat Tahun Baru 2024! Happy New Year</h1>');
+      });
+    </script>
+  </body>
+</html>
